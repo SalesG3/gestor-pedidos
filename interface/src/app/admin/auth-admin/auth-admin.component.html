@@ -1,0 +1,42 @@
+<section id="auth-admin">
+    
+    <div class="comp-cabecalho">
+        <span class="comp-titulo">Gestor de Pedidos</span>
+    </div>
+
+    <div class="comp-corpo">
+
+        <div class="login-box">
+            <div class="login-cabecalho">
+                <span class="login-titulo">Admin Login</span>
+            </div>
+
+            <div class="login-corpo">
+                <label for="inp-login">Login:</label>
+                <br>
+                <input type="number" pattern="\d*" id="inp-login" #login>
+                
+                <br><br>
+
+                <label for="inp-senha">Senha:</label>
+                <br>
+                <input type="password" id="inp-senha" #senha>
+
+                <br><br>
+
+                <label for="inp-entidade">Empresa:</label>
+                <br>
+                <input type="text" id="inp-entidade" #entidade disabled>
+
+                <br>
+            </div>
+
+            <div class="login-rodape">
+
+                <button (click)="admin_login()">Entrar</button> 
+            </div>
+        </div>
+
+    </div>
+
+</section>

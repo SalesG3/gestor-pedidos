@@ -1,0 +1,104 @@
+#auth-admin{
+    background-image: url('../../../assets/wallpaper.jpg');
+    position: relative;
+    background-size: cover;
+    background-color: #EEEEEE;
+
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0px 0px 0px -8px;
+}
+
+.comp-cabecalho{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 8vh;
+    margin: -8px 0px 0px 0px;
+
+    background-color: #5444FF;
+    filter: brightness(1.5);
+
+    & .comp-titulo{
+        font: bold 2rem sans-serif;
+        color: white;
+    }
+}
+
+.login-box{
+    position: absolute;
+
+    width: 16rem;
+    height: 22rem;
+
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(4px);
+
+    left: calc(50% - ( 16rem / 2 ));
+    top: calc(50% - ( 14rem / 2 ) - 10vh);
+}
+
+.login-cabecalho{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+
+    & .login-titulo{
+        font: bold 1.5rem sans-serif;
+        color: white;
+    }
+}
+
+.login-corpo{
+
+    margin: 1rem;
+
+    & label{
+        font: normal 1.25rem 'Gill Sans';
+        color: white;
+    }
+
+    & input{
+        background-color: transparent;
+        width: 13rem;
+        border: 0px;
+        border-radius: 0px;
+        border-bottom: 2px solid white;
+        outline: none;
+        transition: .4s;
+        color: white;
+        font: normal 1.15rem 'Gill Sans';
+    }
+
+    & input:focus{
+        border-bottom: 2px solid #5444FF;
+    }
+}
+
+.login-rodape{
+    margin: 0rem 1rem 0rem 1rem;
+    display: inline-block;
+
+    & button{
+        width: 14rem;
+        height: 3rem;
+        
+        font: bold 1.15rem 'Gill Sans';
+        color: white;
+
+        border: 0px;
+        border-radius: 6px;
+        margin: .25rem 0rem .25rem 0rem;
+
+        background-color: #5444FF;
+        box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, .5);
+    }
+}
